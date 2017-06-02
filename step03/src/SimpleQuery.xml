@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN" "http://ibatis.apache.org/dtd/sql-map-2.dtd">  
+<sqlMap>
+	<select id="selectAll" resultClass="com.hb.struts2.model.SimpleVo">
+		SELECT * FROM SIMPLE03 ORDER BY SABUN
+	</select>
+	<select id="selectOne" parameterClass="int" resultClass="com.hb.struts2.model.SimpleVo">
+		SELECT * FROM SIMPLE03 WHERE SABUN=#VALUE#
+	</select>
+	<update id="updateOne" parameterClass="com.hb.struts2.model.SimpleVo">
+		UPDATE SIMPLE03 SET NAME=#name#, PAY=#pay# WHERE SABUN=#sabun#
+	</update>
+	<insert id="insertOne" parameterClass="com.hb.struts2.model.SimpleVo">
+		INSERT INTO SIMPLE03 VALUES (#sabun#,#name#,SYSDATE,#pay#)
+	</insert>
+	<delete id="deleteOne" parameterClass="int">
+		DELETE FROM SIMPLE03 WHERE SABUN=#VALUE#
+	</delete>
+</sqlMap>

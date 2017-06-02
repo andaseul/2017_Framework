@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="index">
+			<result>/index.jsp</result>
+		</action>
+	</package>
+	<package name="simple03" extends="default">
+		<default-action-ref name="err"/>
+		<action name="err" class="com.hb.struts2.action.SimpleAction">
+			<result name="errors">/err.jsp</result>
+		</action>
+		<!-- 
+		<action name="*" method="{1}" class="com.hb.struts2.action.SimpleAction">
+			<result>/simple/{1}.jsp</result>
+		</action>
+	 	-->
+		<action name="list" method="list" class="com.hb.struts2.action.SimpleAction">
+			<result>/simple/list.jsp</result>
+		</action>
+		<action name="add" method="add" class="com.hb.struts2.action.SimpleAction">
+			<result>/simple/add.jsp</result>
+		</action>
+		<action name="detail" method="detail" class="com.hb.struts2.action.SimpleAction">
+			<interceptor-ref name="params"/>
+			<result>/simple/detail.jsp</result>
+		</action>
+		<action name="edit" method="detail" class="com.hb.struts2.action.SimpleAction">
+			<interceptor-ref name="params"/>
+			<result>/simple/edit.jsp</result>
+		</action>
+		<action name="insert" method="insert" class="com.hb.struts2.action.SimpleAction">
+			<interceptor-ref name="prepare"/>
+			<interceptor-ref name="modelDriven"/>
+			<interceptor-ref name="params"/>
+			<result name="success" type="redirectAction">list</result>
+		</action>
+		<action name="update" method="update" class="com.hb.struts2.action.SimpleAction">
+			<interceptor-ref name="prepare"/>
+			<interceptor-ref name="modelDriven"/>
+			<interceptor-ref name="params"/>
+			<result name="success" type="redirectAction">
+				<param name="actionName">detail</param>
+				<param name="sabun">${bean.sabun}</param>
+			</result>
+			<result name="input" type="redirectAction">
+				<param name="actionName">edit</param>
+				<param name="sabun">${bean.sabun}</param>			
+			</result>
+		</action>
+		<action name="del" method="delete" class="com.hb.struts2.action.SimpleAction">
+			<interceptor-ref name="params"/>
+			<result name="success" type="redirectAction">
+				<param name="actionName">list</param>
+				<param name="msg">DELETE OK</param>
+			</result>
+			<result name="input" type="redirectAction">
+				<param name="actionName">detail</param>
+				<param name="sabun">${sabun}</param>
+			</result>			
+		</action>
+	</package>
+</struts>
