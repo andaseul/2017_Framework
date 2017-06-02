@@ -1,0 +1,154 @@
+* {
+	margin: 0px auto;
+	padding: 0px;
+}
+
+img {
+	width: 90%;
+	height: auto;
+}
+
+#popup-content {
+	width: 100%;
+	margin: 0px auto;
+	text-align: center;
+}
+
+table.t1 {
+	width: 90%;
+	border-collapse: separate;
+	border-spacing: 1px;
+	text-align: left;
+	line-height: 1.5;
+	border-top: 1px solid #ccc;
+	margin-bottom: 20px;
+}
+
+table.t1 td {
+	height: 30px;
+	vertical-align: top;
+	background-color: white;
+	border-bottom: 1px solid #ccc;
+}
+
+td.title {
+	vertical-align: top;
+	border-bottom: 1px solid #ccc;
+	background: #efefef;
+	text-align: center;
+	vertical-align: middle;
+	color: dimgray;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+td.titleSub {
+	text-align: center;
+	color: gray;
+	font-size: 18px;
+}
+
+#H-1 {
+	margin-top: 30px;
+}
+
+h1 {
+	margin-top: 20px;
+	text-align: center;
+	color: darkorange;
+}
+
+h4 {
+	color: dimgray;
+}
+
+p {
+	color: gray;
+}
+
+#popup-background {
+	width: 60%;
+	background-color: white;
+	padding: 10px;
+}
+
+@media screen and (max-width:600px) {
+	img {
+		width: 100%;
+		height: auto;
+	}
+	#popup-content {
+		width: 100%;
+		margin: 0px auto;
+		text-align: center;
+	}
+	button {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		margin-left: 10px;
+		margin-right: 10px;
+		width: 40%;
+		height: 30px;
+		color: darkslateblue;
+		font-size: 10pt;
+	}
+	#popup-background {
+		width: 95%;
+		background-color: white;
+	}
+	table {
+		width: 100%;
+		border-collapse: separate;
+		border-spacing: 1px;
+		text-align: left;
+		line-height: 1.5;
+		font-size: 10pt;
+		border-top: 1px solid #ccc;
+		margin-bottom: 20px;
+	}
+	table th {
+		font-weight: bold;
+		vertical-align: top;
+		border-bottom: 1px solid #ccc;
+		background: #efefef;
+		text-align: center;
+		vertical-align: middle;
+	}
+	table td {
+		vertical-align: top;
+		background-color: white;
+		border-bottom: 1px solid #ccc;
+	}
+	.title {
+		vertical-align: top;
+		border-bottom: 1px solid #ccc;
+		background: #efefef;
+		text-align: center;
+		vertical-align: middle;
+		color: dimgray;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	.titleSub {
+		text-align: center;
+		color: gray;
+		font-size: 18px;
+	}
+	#H-1 {
+		margin-top: 30px;
+		margin-left: 10px;
+	}
+	h1 {
+		margin-top: 20px;
+		text-align: center;
+		color: darkorange;
+	}
+	h4 {
+		color: dimgray;
+		margin-left: 10px;
+	}
+	p {
+		color: gray;
+		margin-left: 10px;
+	}
+}

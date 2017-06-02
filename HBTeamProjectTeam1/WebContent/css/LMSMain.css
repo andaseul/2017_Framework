@@ -1,0 +1,165 @@
+.mcon {
+	width: 48%;
+	margin-left: 15px;
+	padding-bottom: 20px;
+	display: inline-block;
+}
+
+#con-cal {
+	position: relative;
+	top: 40px;
+	left: 15px;
+	width: 350px;
+}
+
+#aaaaa {
+	margin-top: 15px;
+	margin-left: 25px;
+}
+
+#calendar {
+	width: 90%;
+	margin: 0px auto;
+}
+
+#calendar table {
+	background-color: white;
+}
+
+#calendar h3 {
+	display: none;
+}
+
+#calendar tr, #calendar td {
+	border: 1px solid #cccccc;
+}
+
+#calendar td {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.fc td.fc-today {
+	background-color: rgb(255, 239, 213);
+	color: orangered;
+	font-weight: bold;
+}
+
+#calendar tr:last-child>td {
+	border-bottom: 1px solid #cccccc;
+}
+
+#calendar button {
+	margin-top: 10px;
+	width: 60px;
+	height: 20px;
+	font-size: 10pt;
+}
+
+.mcon>div:first-child {
+	width: 90%;
+	margin: 0px auto;
+	font-weight: bold;
+	border-bottom: 2px solid black;
+}
+
+.mcon>div>a {
+	float: right;
+	position: relative;
+	top: -22px;
+	text-decoration: none;
+	font-size: 11pt;
+	color: dimgray;
+}
+
+.mcon>div>a:active, .mcon>div>a:visited {
+	color: dimgray;
+}
+
+
+table.maint {
+	width: 90%;
+	margin: 0px auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: center;
+	white-space: normal;
+	margin-top: 15px;
+}
+
+table.maint>thead>tr>th {
+	padding: 10px 10px 9px 10px;
+	text-align: center;
+	margin-top: 10px;
+	background-color: #ff8000;
+	background-repeat: no-repeat;
+	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2),
+		rgba(0, 0, 0, 0.2));
+	background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2),
+		rgba(0, 0, 0, 0.2));
+	background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2),
+		rgba(0, 0, 0, 0.2));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2),
+		rgba(0, 0, 0, 0.2));
+	text-shadow: rgba(0, 0, 0, 0.2) 0px -1px 0px;
+	color: white;
+}
+
+table.maint tbody {
+	margin-top: 3px;
+}
+
+table.maint tbody tr {
+	border: 1px solid #f0f0f0;
+	border-left: none;
+	border-right: none;
+	height: 27px;
+}
+
+table.maint tbody tr:nth-child(even) {
+	background-color: rgb(255, 239, 213);
+}
+
+table.maint tbody tr td:nth-child(1), 
+table.maint tbody tr td:nth-child(3) {
+	text-align: center;
+}
+
+table.maint tbody tr td:nth-child(2) {
+	text-align: left;
+}
+
+table.maint a {
+	color: black;
+	text-decoration: none;
+}
+table.maint a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+table.maint a:active {
+	color: black;
+	text-decoration: none;
+}
+
+table.maint a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

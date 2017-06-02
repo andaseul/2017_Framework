@@ -1,0 +1,143 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+#content {
+	width: 90%;
+	margin: 0px auto;
+	padding-top: 30px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 30px;
+}
+
+#con-title {
+	width: 100%;
+	margin: 0px auto;
+	border-bottom: 2px solid black;
+	padding-bottom: 5px;
+}
+
+#con-title>h3 {
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+
+#con-btn {
+	width: 100%;
+	margin: 0px auto;
+	margin-top: 20px;
+}
+
+#con-btn p {
+	text-align: right;
+}
+
+#con-btn button {
+	width: 90px;
+	height: 30px;
+	border-radius: 10px;
+}
+
+table.t1 {
+	width: 100%;
+	margin: 0px auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: center;
+	white-space: normal;
+	margin-top: 15px;
+}
+
+table.t1>thead>tr>th {
+	padding: 10px 10px 9px 10px;
+	text-align: center;
+	margin-top: 10px;
+	background-color: #ff8000;
+	background-repeat: no-repeat;
+	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2),
+		rgba(0, 0, 0, 0.2));
+	background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2),
+		rgba(0, 0, 0, 0.2));
+	background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2),
+		rgba(0, 0, 0, 0.2));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2),
+		rgba(0, 0, 0, 0.2));
+	text-shadow: rgba(0, 0, 0, 0.2) 0px -1px 0px;
+	color: white;
+}
+
+table.t1 td {
+	padding: 10px 10px 7px 10px;
+}
+
+table.t1 tbody {
+	margin-top: 3px;
+}
+
+table.t1 tbody tr {
+	border: 1px solid #f0f0f0;
+	border-top: none;
+	background: transparent;
+}
+
+table.t1 tbody>tr>th {
+	background-color: rgb(255, 239, 213);
+}
+
+table.t1 tbody>tr>td {
+	text-align: left;
+	padding-left: 10px;
+}
+
+table.t1 tbody>tr>td input {
+	width: 60%;
+	height: 30px;
+	padding-left: 10px;
+	border: none;
+	border-radius: 10px;
+	background-color: rgb(255, 239, 213);
+}
+
+table.t1 tbody>tr>td button {
+	width: 50px;
+	height: 30px;
+	border-radius: 10px;
+}
+
+table.t2 {
+	margin-top: 50px;
+}
+
+table.t1 input.ra {
+	width: 15px;
+	height: 15px;
+	margin-left: 20px;
+}
+
+table.t1>tbody>tr>th,
+table.t1>tbody>tr>td {
+	text-overflow : ellipsis;
+	overflow : hidden;
+}
+
+table.t1 select.t1-select {
+	width: 60%;
+	height: 30px;
+}
+
+table.t1 tr.t1-sub th,
+table.t1 tr.t1-sub td {
+	border-left: 1px solid #f0f0f0;
+	height: 40px;
+	text-align: center;
+}
+
+.ui-datepicker-calendar>tbody td.ui-datepicker-week-end:first-child a {
+	color: red;
+}
+
+.ui-datepicker-calendar>tbody td.ui-datepicker-week-end:last-child a {
+	color: blue;
+}

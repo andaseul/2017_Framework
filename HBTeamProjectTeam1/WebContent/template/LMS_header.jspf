@@ -1,0 +1,236 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>LMS SYSTEM</title>
+        <link rel="stylesheet" type="text/css" href="../css/LMSTemplate.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script type="text/javascript" src="js/jquery-1.12.4.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="../js/jquery-1.12.4.js"></script>
+        <script type="text/javascript" src="../js/jquery-ui.min.js"></script>
+       
+       	
+       
+        <script type="text/javascript">
+            $(document).ready(function() {
+            	
+                // Create two variable with the names of the months and days in an array
+                var monthNames = ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"];
+                var dayNames = ["일요일", "월요일", "화요일", "수요일", "목요일", "금요일", "토요일"]
+
+                // Create a newDate() object
+                var newDate = new Date();
+                // Extract the current date from Date object
+                newDate.setDate(newDate.getDate());
+                // Output the day, date, month and year    
+                $('#Date').html(newDate.getFullYear() + "년 " + monthNames[newDate.getMonth()] + ' ' + newDate.getDate() + '일 ' + dayNames[newDate.getDay()]);
+
+                setInterval(function() {
+                    // Create a newDate() object and extract the seconds of the current time on the visitor's
+                    var seconds = new Date().getSeconds();
+                    // Add a leading zero to seconds value
+                    $("#sec").html((seconds < 10 ? "0" : "") + seconds);
+                }, 1000);
+
+                setInterval(function() {
+                    // Create a newDate() object and extract the minutes of the current time on the visitor's
+                    var minutes = new Date().getMinutes();
+                    // Add a leading zero to the minutes value
+                    $("#min").html((minutes < 10 ? "0" : "") + minutes);
+                }, 1000);
+
+                setInterval(function() {
+                    // Create a newDate() object and extract the hours of the current time on the visitor's
+                    var hours = new Date().getHours();
+                    // Add a leading zero to the hours value
+                    $("#hours").html((hours < 10 ? "0" : "") + hours);
+                }, 1000);
+
+            });
+        </script>
+        <link rel="canonical" href="http://www.alessioatzeni.com/wp-content/tutorials/jquery/CSS3-digital-clock/index.html" />
+    </head>
+	<%
+		String id = (String) session.getAttribute("id");
+		String name = (String) session.getAttribute("name");
+		String gender = (String) session.getAttribute("gender");
+		int hb_code = ((Integer)session.getAttribute("hb_code")).intValue();
+	%>
+    <body>
+        <div id="header">
+            <a href="lms_main.hb"><img alt="logo" src="../imgAll/imgs/logo1.png"/></a>
+            <div class="container">
+                <div class="clock">
+                    <div id="Date"></div>
+                    <ul>
+                        <li id="hours"></li>
+                        <li id="point">:</li>
+                        <li id="min"></li>
+                        <li id="point">:</li>
+                        <li id="sec"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <label for="toggle">MENU</label>
+        <input type="checkbox" id="toggle"/>
+        <div class="dropmenu">
+            <ul id="dropdown">
+                <div id="profile"></div>
+                <div id="profileInfo">
+                    <p><span><%=name %> 님</span><br/></p>
+                    <p>
+                        <a href="mypage.hb">MyPage</a>
+                        <a href="logout.hb">LogOut</a>
+                    </p>
+                </div>
+                
+                <li class="main-menu main-m1"><a href="notice_bbs.hb?page=1">공 지 &nbsp;사 항</a></li>
+                
+                <!-- 학생 메뉴 -->
+                <% if(hb_code==1) { %>
+                <li class="main-menu main-m4">내 &nbsp; &nbsp;강 &nbsp; 의
+                    <ul>
+                        <li class="sub-menu"><a href="classnotice_bbs.hb?page=1">- 강의 공지</a></li>
+                        <li class="sub-menu"><a href="classqa_bbs.hb?page=1">- 강의 게시판</a></li>
+                        <li class="sub-menu"><a href="online_test.hb">- 온라인 시험</a></li>
+                        <li class="sub-menu"><a href="check_score.hb">- 성적 확인</a></li>
+                    </ul>
+                </li>
+                <li class="main-menu main-m1"><a href="stu_attend.hb">출 석 &nbsp;정 보</a></li>
+                <li class="main-menu main-m2">취 업 &nbsp;정 보
+                    <ul>
+                        <li class="sub-menu"><a href="recruitInfo_bbs.hb?page=1">- 구직 정보</a></li>
+                        <li class="sub-menu"><a href="consulting_bbs.hb?page=1">- 컨 설 팅</a></li>
+                    </ul>
+                </li>
+                
+                <!-- 행정 메뉴 -->
+                <% } else if(hb_code==2) { %>
+                <li class="main-menu main-m2">수강생 관리
+                    <ul>
+                        <li class="sub-menu"><a href="student_management.hb?page=1">- 수강생 목록</a></li>
+                        <li class="sub-menu"><a href="admin_att.hb?page=1">- 출석 관리</a></li>
+                    </ul>
+                </li>
+                <li class="main-menu main-m2">직 원&nbsp; 관 리
+                    <ul>
+                    	<li class="sub-menu"><a href="staff_management.hb">- 직원 목록</a></li>
+                    	<li class="sub-menu"><a href="add_staff.hb">- 직원 등록</a></li>
+                    </ul>
+                </li>
+                <li class="main-menu main-m2">강 의 &nbsp;관 리
+                    <ul>
+                    	<li class="sub-menu"><a href="class_management.hb">- 강의 목록</a></li>
+                        <li class="sub-menu"><a href="add_class.hb">- 강의 개설</a></li>
+                    </ul>
+                </li>	
+                
+                <!-- 강사 메뉴 -->
+                <% } else if(hb_code==3) { %>
+                <li class="main-menu main-m3">내 &nbsp; &nbsp;&nbsp;강 &nbsp;의
+                    <ul>
+                        <li class="sub-menu"><a href="classnotice_bbs.hb?page=1">- 강의 공지</a></li>
+                        <li class="sub-menu"><a href="classqa_bbs.hb?page=1">- 강의 게시판</a></li>
+                        <li class="sub-menu"><a href="score_management.hb">- 학생 성적관리</a></li>
+                    </ul>
+                </li>
+                <li class="main-menu"><a href="teacher_attend.hb">출 결 &nbsp;관 리</a></li>
+                <li class="main-menu"><a href="teacher_exam_management.hb">시 험 &nbsp;등 록</a></li>
+                
+                <!-- 영업 메뉴 -->
+                <% } else if(hb_code==4) { %>
+                <li class="main-menu"><a href="applicant_management.hb">수강신청 관리</a></li>
+                <li class="main-menu"><a href="inquiry_bbs.hb?page=1">문 의 &nbsp;사 항</a></li>
+                <li class="main-menu"><a id="chat-icon" href="#">온라인 상담</a></li>
+                
+                <!-- 취업지원 메뉴 -->
+                <% } else if(hb_code==5) { %>
+                <li class="main-menu"><a href="recruitInfo_bbs.hb?page=1">구 직 &nbsp;정 보</a></li>
+                <li class="main-menu main-m3">취 업 &nbsp;지 원
+	            	<ul>
+	                	<li class="sub-menu"><a href="job_percent.hb">- 취업률 통계</a></li>
+	                    <li class="sub-menu"><a href="stu_job_bbs.hb?page=1">- 취업자 관리</a></li>
+	                    <li class="sub-menu"><a href="consulting_bbs.hb?page=1">- 취업 컨설팅</a></li>
+	                </ul>
+	            </li>
+                <% } %>
+                
+            </ul>
+        </div>
+        
+        <div id="chat">
+			<div>
+				<div id="chat-title">한빛교육 온라인 상담<a id="close-chat" href="#">X</a></div>
+		        <textarea id="messageWindow" rows="18" style="width:100%" readonly="readonly"></textarea>
+		        <input id="inputMessage" type="text"/>
+		        <input id="send-btn" type="submit" value="전송" onclick="javascript:send();" />
+	    	</div>
+	    </div>
+
+		<script type="text/javascript">
+			if(<%=gender.equals("남") %>) $('#profile').css('background-image', 'url(../imgAll/lms/man.jpg)');
+	        else $('#profile').css('background-image', 'url(../imgAll/lms/woman.jpg)');
+		
+			var textarea = document.getElementById("messageWindow");
+	        var webSocket;
+			var inputMessage = document.getElementById('inputMessage');
+	        
+			webSocket.onerror = function(event) {
+			     onError(event)
+			};
+			webSocket.onopen = function(event) {
+				onOpen(event)
+			};
+			webSocket.onmessage = function(event) {
+				onMessage(event)
+			};
+			
+			function onMessage(event) {
+				if(event.data=="tag1") {
+			   		$('#chat-icon').html('온라인 상담<img src="../imgAll/icon/ico-new.png">');
+			   	} else {
+					textarea.value += "비회원 : " + event.data + "\n";
+			   	}
+		    }
+		    function onOpen(event) {
+		        textarea.value += "한빛교육센터 홍대점 온라인 상담센터에 오신 것을 환영합니다.\n\n";
+		    }
+		    function onError(event) {
+		      
+		    }
+		    function send() {
+		    	textarea.value += "나 : " + inputMessage.value + "\n";
+		        webSocket.send(inputMessage.value);
+		        inputMessage.value = "";
+		    }
+			
+			$(document).ready(function() {
+				$('#close-chat').click(function(event) {
+					event.preventDefault();
+					$("#chat").hide();
+				});
+				
+				$(function() {
+					$("#chat").draggable();
+				});
+				
+				$('#chat-icon').click(function(event) {
+					event.preventDefault();
+					$('#chat').show();
+			
+				});
+			});
+		</script>
+        
+        
+        
+        <div id="frame_content">
+            <div id="dummy_top"></div>
+            <div>
+                <div id="dummy_left">&nbsp;</div>
+				<div id="main_content">

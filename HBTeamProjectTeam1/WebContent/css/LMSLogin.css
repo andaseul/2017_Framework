@@ -1,0 +1,195 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+#search-id,
+#search-pw {
+	width: 370px;
+	height: 330px;
+	position: absolute;
+	top: 180px;
+	left: 20%;
+	display: none;
+	background-color: orange;
+	border: 10px solid orangered;
+	border-radius: 20px;
+}
+
+div.search-title {
+	width: 100%;
+	height: 40px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: white;
+	font-weight: bold;
+}
+
+#search-id>div:first-child {
+	margin-bottom: 40px;
+}
+
+div.search-title a {
+	position: relative;
+	color: orangered;
+	font-weight: bold;
+	font-size: 18pt;
+	top: -30px;
+	left: 130px;
+	text-decoration: none;
+}
+
+#search-id p,
+#search-pw p {
+	margin-bottom: 15px;
+}
+
+#search-id input,
+#search-pw input {
+	width: 80%;
+	height: 40px;
+	border: 1px white solid;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+#login-backimg img {
+	width: 100%;
+	height: 100%;;
+	z-index: 30;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#login-form {
+	background-color: rgba(255, 255, 255, 0.5);
+	position: absolute;
+	border-radius: 50px;
+	margin: 0px auto;
+	z-index: 70;
+	width: 500px;
+	left: 35%;
+	top: 15%;
+	height: 600px;
+	text-align: center;
+	font-weight: bold;
+}
+
+#layout {
+	height: 500px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+#tab-container {
+	width: 70%;
+	height: 350px;
+	margin: 20px auto;
+	background-color: rgba(255, 165, 0, 0.8);
+	border-radius: 30px;
+}
+
+ul.tab {
+	padding: 0px;
+}
+
+ul.tab li {
+	list-style-type: none;
+	width: 50%;
+	height: 40px;
+	float: left;
+}
+
+ul.tab li a {
+	text-decoration: none;
+	display: block;
+	color: black;
+	line-height: 40px;
+	text-align: center;
+}
+
+ul.tab li a.selected {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	cursor: default;
+	border-bottom: 5px solid white;
+}
+
+ul.panel {
+	clear: both;
+	padding: 0;
+	height: 85%;
+}
+
+ul.panel li {
+	list-style-type: none;
+	padding: 10px;
+}
+
+.panel p {
+	margin-top: 25px;
+}
+
+.panel a {
+	margin: 0px 10px;
+}
+
+#id {
+	margin-top: 20px;
+}
+
+#id, #pw {
+	width: 80%;
+	height: 40px;
+	border: 1px white solid;
+	border-radius: 5px;
+	font-size: 18px;
+}
+
+button {
+	width: 80%;
+	height: 40px;
+	background-color: orangered;
+	border: 1px solid orange;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+}
+
+@media screen and (min-width:481px) and (max-width:600px) {
+	#login-form {
+		width: 80%;
+		left: 10%;
+		top: 10%;
+	}
+	#tab-container {
+		width: 80%;
+	}
+}
+
+@media screen and (max-width:480px) {
+	#login-form {
+		position: absolute;
+		margin: 0px;
+		z-index: 70;
+		width: 100%;
+		top: 10%;
+		left: 0px;
+		height: 80%;
+		text-align: center;
+		font-weight: bold;
+	}
+	#tab-container {
+		width: 80%;
+		height: 70%;
+		margin: 20px auto;
+		background-color: rgba(255, 165, 0, 0.8);
+		border-radius: 30px;
+	}
+	.search-info {
+		display: block;
+	}
+}

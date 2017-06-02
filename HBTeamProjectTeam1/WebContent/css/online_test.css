@@ -1,0 +1,115 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+#content {
+	width: 90%;
+	margin: 0px auto;
+	padding-top: 30px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 30px;
+}
+
+#con-title {
+	width: 100%;
+	margin: 0px auto;
+	border-bottom: 2px solid black;
+	padding-bottom: 5px;
+}
+
+#con-title>h3 {
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+#notice1 {
+	color: red;
+}
+#sub-title {
+	width: 50%;
+	margin: 0px auto;
+	border: 5px solid orange;
+	border-radius: 10px;
+	padding: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+#mybook {
+	background-color: white;
+}
+
+div.book-page {
+	padding-top: 30px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	background-color: rgb(255, 239, 213);
+	font-weight: bold;
+}
+
+.page-content>p {
+	text-align: center;
+	background-color: white;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 10px;
+}
+
+.page-content>div {
+	margin-top: 20px;
+}
+
+.example p {
+	margin-top: 10px;
+}
+
+.book-page>p {
+	font-size: 16pt;
+}
+
+#end-page {
+	text-align: center;
+}
+
+#end-page button {
+	width: 50%;
+	height: 50px;
+	margin-top: 50px;
+	background-color: white;
+	border: 2px solid orange;
+	border-radius: 20px;
+	font-size: 15pt;
+	font-weight: bold;
+}
+
+#end-page h2 {
+	margin-top: 30px;
+}
+
+#notice1 {
+	margin-top: 40px;
+}
+
+#notice1 p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#btn {
+	margin: 0px auto;
+	text-align: right;
+	margin-right: 20px;
+}
+
+.page-btn {
+	width: 60px;
+	height: 30px;
+	background-color: white;
+	border: 2px solid orange;
+	border-radius: 10px;
+	font-weight: bold;
+}

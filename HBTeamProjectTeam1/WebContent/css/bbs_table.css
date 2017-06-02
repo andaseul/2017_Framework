@@ -1,0 +1,257 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+#content {
+	width: 90%;
+	margin: 0px auto;
+	padding-top: 30px;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 30px;
+}
+
+#con-title {
+	width: 100%;
+	margin: 0px auto;
+	border-bottom: 2px solid black;
+	padding-bottom: 5px;
+}
+
+#con-title>h3 {
+	margin-bottom: 5px;
+	margin-left: 10px;
+}
+
+#search-keyword {
+	width: 100%;
+	height: 35px;
+	margin: 0px auto;
+	margin-top: 10px;
+}
+
+#search-keyword-div, #search-keyword-div2 {
+	line-height: 35px;
+	width: 340px;
+	height: 40px;
+	background-color: rgb(233, 233, 233);
+	border-radius: 10px;
+	padding-left: 20px;
+}
+
+#search-keyword-div2 {
+	width: 385px;
+}
+
+#search-keyword-icon {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 5px;
+}
+
+#sel {
+	height: 25px;
+	position: relative;
+	top: -4.5px;
+}
+
+#keyword {
+	height: 25px;
+	position: relative;
+	top: -5px;
+}
+
+#search-btn {
+	height: 25px;
+	width: 40px;
+	position: relative;
+	top: -4px;
+}
+
+#con-btn {
+	width: 100%;
+	margin: 0px auto;
+	margin-top: 20px;
+}
+
+#con-btn p {
+	text-align: right;
+}
+
+#con-btn button {
+	width: 90px;
+	height: 30px;
+	border-radius: 10px;
+}
+
+div.page {
+	width: 90%;
+	text-align: center;
+	margin: 0px auto;
+	margin-top: 10px;
+}
+
+div.page div {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	border: 2px solid orange;
+}
+
+div.page div:hover {
+	background-color: orange;
+}
+
+div.page div:hover>a {
+	color: white;
+	font-weight: bold;
+}
+
+div.page a, div.page a:visited, div.page a:active {
+	line-height: 25px;
+	color: orange;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+img.tag {
+	width: 30px;
+	height: 30px;
+	position: relative;
+	top: 7px;
+}
+
+table.t1 {
+	width: 100%;
+	margin: 0px auto;
+	border-collapse: collapse;
+	border-spacing: 0;
+	text-align: center;
+	white-space: normal;
+	margin-top: 15px;
+}
+
+table.t1>thead>tr>th {
+	padding: 10px 10px 9px 10px;
+	text-align: center;
+	margin-top: 10px;
+	background-color: #ff8000;
+	background-repeat: no-repeat;
+	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.2),
+		rgba(0, 0, 0, 0.2));
+	background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.2),
+		rgba(0, 0, 0, 0.2));
+	background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.2),
+		rgba(0, 0, 0, 0.2));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.2),
+		rgba(0, 0, 0, 0.2));
+	text-shadow: rgba(0, 0, 0, 0.2) 0px -1px 0px;
+	color: white;
+}
+
+table.t1 td {
+	padding: 10px 10px 7px 10px;
+}
+
+table.t1 tbody {
+	margin-top: 3px;
+}
+
+table.t1 tbody tr {
+	border: 1px solid #f0f0f0;
+	border-top: none;
+	background: transparent;
+}
+
+table.t1 tbody tr:nth-child(even) {
+	background-color: rgb(255, 239, 213);
+}
+
+#t1-title {
+	text-align: left;
+	padding-left: 10px;
+}
+
+table.t1 a {
+	color: black;
+	text-decoration: none;
+}
+table.t1 a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+table.t1 a:active {
+	color: black;
+	text-decoration: none;
+}
+
+table.t1 a:hover {
+	color: blue;
+	text-decoration: underline;
+}
+
+
+#re-icon {
+	width: 36px;
+	height: 17px;
+	position: relative;
+	top: 3px;
+}
+
+#datatable {
+	display: none;
+}
+
+#con-grap {
+	width: 100%;
+	margin-top: 20px;
+}
+
+#con-grap-1, #con-grap-2, #con-grap-3 {
+	margin: 0px auto;
+	width: 62%;
+	display: inline-block;
+	padding: 20px;
+	background-color: rgb(233, 233, 233);
+	border-radius: 20px;
+	float: left;
+	margin-top: 15px;
+}
+
+#con-grap-2 {
+	width: 36%;
+	float: right;
+	height: 435px;
+}
+
+#con-grap-3 {
+	width: 100%;
+}
+
+table.t3>tbody>tr>th {
+	background-color: rgb(255, 239, 213);
+}
+
+table.t3>tbody>tr>td {
+	background-color: white;
+}
+
+#notice {
+	width: 100%;
+	margin: 0px auto;
+	color: red;
+	font-weight: bold;
+	border: 1px solid black;
+	border-radius: 20px;
+	margin-top: 40px;
+	padding: 20px;
+	font-size: 11pt;
+}
+
+#notice p {
+	margin-top: 10px;
+}

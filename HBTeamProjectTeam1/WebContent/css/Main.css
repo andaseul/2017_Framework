@@ -1,0 +1,73 @@
+@media screen and (min-width:600px) and (max-width:1024px) {
+}
+
+/******************************************************/
+
+/* media max-width:480px */
+@media screen and (max-width:600px) {
+	#go_ad {
+		margin-right: 0px;
+	}
+	#go_lms {
+		margin-left: 0px;
+	}
+	#box {
+		position: absolute;
+		top: 200px;
+		left: 10%;
+		width: 80%;
+		height: 190px;
+		line-height: 200px;
+		margin: 0px auto;
+		border: 15px solid orange;
+		border-radius: 70px;
+	}
+	.anifont {
+		color: orangered;
+		font-size: 50px;
+		font-weight: bold;
+		text-shadow: 8px 2px 5px orange;
+	}
+	#h {
+		position: absolute;
+		left: 22%;
+		top: -100px;
+		width: 10px;
+		height: 30px;
+	}
+	#a {
+		position: absolute;
+		left: 32%;
+		top: -100px;
+		width: 10px;
+		height: 30px;
+	}
+	#n {
+		position: absolute;
+		left: 42%;
+		top: -100px;
+		width: 10px;
+		height: 30px;
+	}
+	#b {
+		position: absolute;
+		left: 52%;
+		top: -100px;
+		width: 10px;
+		height: 30px;
+	}
+	#i {
+		position: absolute;
+		left: 62%;
+		top: -100px;
+		width: 10px;
+		height: 30px;
+	}
+	#t {
+		position: absolute;
+		left: 69%;
+		top: -100px;
+		width: 10px;
+		height: 30px;
+	}
+}

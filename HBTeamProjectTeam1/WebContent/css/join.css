@@ -1,0 +1,224 @@
+* {
+	margin: 0px auto;
+	padding: 0px;
+}
+.ui-datepicker-calendar>tbody td.ui-datepicker-week-end:first-child a {
+	color: red;
+}
+
+.ui-datepicker-calendar>tbody td.ui-datepicker-week-end:last-child a {
+	color: blue;
+}
+@font-face {
+	font-family: CJ ONLYONE Medium;
+	src: url(../NanumFont_TTF_ALL/CJ ONLYONE Medium.ttf);
+	font-family: NanumPen;
+	src: url(../NanumFont_TTF_ALL/NanumPen.ttf);
+}
+
+#content {
+	margin: 0px auto;
+	width: 70%;
+	text-align: center;
+	font-size: 20px;
+	padding: 20px;
+}
+
+#title {
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 30px;
+	margin-bottom: 50px;
+}
+
+#join {
+	margin-top: 0px;
+}
+#join>div:first-child {
+	margin: 0px auto;
+	text-align: center;
+}
+#joinTable {
+	margin: 10px auto;
+	width: 60%;
+	border-collapse: separate;
+	border-spacing: 1px;
+	text-align: left;
+	line-height: 1.5;
+	margin-bottom: 20px;
+}
+#idCheck {
+	text-align: center;
+	padding: 0px;
+	margin: 0px auto;
+	width: 150px;
+	height: 30px;
+	border: 1px solid lightgray;
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 18px;
+	color: dimgray;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.sub01 {
+	width: 20%;
+	height: 40px;
+	vertical-align: top;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+#text1 {
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 18px;
+	color: dimgray;
+	position: relative;
+	margin-left: 10px;
+}
+
+#text2 {
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 18px;
+	color: dimgray;
+	position: relative;
+	margin-left: 10px;
+}
+
+#text3 {
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 18px;
+	color: dimgray;
+	position: relative;
+	margin-left: 10px;
+}
+
+#text4 {
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 18px;
+	color: dimgray;
+	position: relative;
+	margin-left: 10px;
+}
+
+#text5 {
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 18px;
+	color: dimgray;
+	position: relative;
+	margin-left: 10px;
+}
+
+#text6 {
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 18px;
+	color: dimgray;
+	position: relative;
+	margin-left: 10px;
+}
+
+#text7 {
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 18px;
+	color: dimgray;
+	position: relative;
+	top: -10px;
+	margin-left: 10px;
+}
+
+#text8 {
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 18px;
+	color: dimgray;
+	position: relative;
+	top: -10px;
+	margin-left: 10px;
+}
+
+#year {
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 18px;
+	color: dimgray;
+}
+
+#month {
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 18px;
+	color: dimgray;
+}
+
+#day {
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 18px;
+	color: dimgray;
+}
+
+.sub02 {
+	widows: 80%;
+	height: 30px;
+	border-bottom-color: lightgray;
+	margin-bottom: 5px;
+}
+
+label {
+	text-align: left;
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 20px;
+	color: dimgray;
+}
+
+.joinSub input {
+	border: none;
+	border-bottom: 1px solid #ccc;
+	font-size: 18px;
+}
+
+#joinSub>* {
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 40px;
+}
+
+.blank {
+	height: 20px;
+}
+
+
+button {
+	text-align: center;
+	padding: 0px;
+	margin: 0px auto;
+	width: 200px;
+	height: 30px;
+	font-family: 'CJ ONLYONE Medium';
+	font-size: 20px;
+	font-weight: bold;
+	color: dimgray;
+	background-color: white;
+	border-radius: 10px;
+}
+@media screen and (max-width:600px) {
+	#content {
+		width: 95%
+	}
+	#joinTable {
+		width: 100%;
+	}
+	#title {
+		margin-bottom: 50px;
+	}
+	* {
+		font-size: 11pt;
+	}
+	.sub01 {
+		font-size: 10pt;
+	}
+	#text1,#text2,#text3,#text7,#text8 {
+		font-size: 11pt;
+	}
+	#idCheck, button {
+		font-size: 11pt;
+	}
+}
